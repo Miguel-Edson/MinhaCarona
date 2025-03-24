@@ -16,6 +16,12 @@
   --font-destaque: 1.2rem; /* 22px */
   --font-paragrafo: 1rem; /* 16px */
   --font-subtitulo: 1rem; /* 16px */
+
+  --font-display-mobile: 3rem; /* 48px */
+  --font-titulo_sessao-mobile: 2rem; /* 32px */
+  --font-destaque-mobile: 1.2rem; /* 22px */
+  --font-paragrafo-mobile: 1rem; /* 16px */
+  --font-subtitulo-mobile: 1rem; /* 16px */
 }
 
 
@@ -78,7 +84,7 @@ body {
 .paragrafo {
   font-family: var(--font-secundaria);
   font-size: var(--font-paragrafo);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
 
 }
 
@@ -86,4 +92,10 @@ body {
   font-family: var(--font-secundaria);
   font-size: var(--font-subtitulo);
   font-weight: var(--font-weight-light);
+}
+
+
+html, body {
+  overflow-x: hidden;
+  
 }

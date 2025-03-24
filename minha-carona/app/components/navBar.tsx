@@ -18,7 +18,7 @@ export default function Navbar() {
     }
 
   return (
-    <nav className="fixed  top-0 left-0 right-0 z-50 justify-between items-center p-4 bg-primary_blue text-white w-screen">
+    <nav className="fixed top-0 left-0 right-0 z-50 justify-between items-center py-4 bg-primary_blue text-white w-full">
         
         <div className="hidden md:flex max-w-[70.25rem] w-full items-center justify-between mx-auto">
 
@@ -70,7 +70,7 @@ export default function Navbar() {
 
       
         {/* Menu responsivo */}
-        <div className="md:hidden flex w-screen  mx-auto items-center justify-between">
+        <div className="md:hidden flex max-w-full h-fit  mx-auto items-center justify-between">
             <div className=" max-w-[20rem] relative flex justify-between mx-auto w-full">
                 <Image src={Logo} alt="Logo" width={50} height={50} className="z-10"  />
 

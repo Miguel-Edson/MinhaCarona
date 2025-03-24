@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/navBar";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -21,6 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt">
       <body className={`${montserrat.variable} ${hankenGrotesk.variable} antialiased`}>
+        
+        <div className="mb-[5rem] max-w-full"><Navbar/></div>
         {children}
       </body>
     </html>
