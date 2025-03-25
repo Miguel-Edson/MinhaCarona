@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt">
       <body className={`${montserrat.variable} ${hankenGrotesk.variable} antialiased`}>
         
-        <div className="mb-[5rem] max-w-full"><Navbar/></div>
+        <div className="h-[5rem] max-w-fit"><Navbar/></div>
         {children}
       </body>
     </html>

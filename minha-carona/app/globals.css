@@ -17,11 +17,11 @@
   --font-paragrafo: 1rem; /* 16px */
   --font-subtitulo: 1rem; /* 16px */
 
-  --font-display-mobile: 3rem; /* 48px */
-  --font-titulo_sessao-mobile: 2rem; /* 32px */
-  --font-destaque-mobile: 1.2rem; /* 22px */
-  --font-paragrafo-mobile: 1rem; /* 16px */
-  --font-subtitulo-mobile: 1rem; /* 16px */
+  --font-display-mobile: 32px; /* 48px */
+  --font-titulo_sessao-mobile: 24px; /* 32px */
+  --font-destaque-mobile: 16px; /* 22px */
+  --font-paragrafo-mobile: 12px; /* 16px */
+  --font-subtitulo-mobile: 12px; /* 16px */
 }
 
 
@@ -64,38 +64,91 @@ body {
 .hanken {
   font-family: var(--font-secundaria);
 }
-
+@layer base {
 .display {
   font-family: var(--font-principal);
-  font-size: var(--font-display);
+  font-size: var(--font-display-mobile);
 }
+
+/* .titulo_sessao {
+  font-family: var(--font-principal);
+  font-size: var(--font-titulo_sessao);
+} */
 
 .titulo_sessao {
   font-family: var(--font-principal);
-  font-size: var(--font-titulo_sessao);
+  font-size: var(--font-titulo_sessao-mobile);
 }
+
 
 .destaque {
   font-family: var(--font-secundaria);
-  font-size: var(--font-destaque);
+  font-size: var(--font-destaque-mobile);
   font-weight: var(--font-weight-bold);
 }
 
 .paragrafo {
   font-family: var(--font-secundaria);
-  font-size: var(--font-paragrafo);
+  font-size: var(--font-paragrafo-mobile);
   font-weight: var(--font-weight-normal);
 
 }
 
 .subtitulo {
   font-family: var(--font-secundaria);
-  font-size: var(--font-subtitulo);
+  font-size: var(--font-subtitulo-mobile);
   font-weight: var(--font-weight-light);
 }
 
+@media (min-width: 768px) {
+  .titulo_sessao {
+    font-size: var(--font-titulo_sessao);
+  }
+  .display{
+    font-size: var(--font-display);
+  }
+  .destaque{
+    font-size: var(--font-destaque);
+  }
+  .paragrafo{
+    font-size: var(--font-paragrafo);
+  }
+  .subtitulo{
+    font-size: var(--font-subtitulo);
+  }
+}
+/* 
+.display_mobile {
+  font-family: var(--font-principal);
+  font-size: var(--font-display-mobile);
+}
 
-html, body {
+.titulo_sessao_mobile {
+  font-family: var(--font-principal);
+  font-size: var(--font-titulo_sessao-mobile);
+}
+
+.destaque_mobile {
+  font-family: var(--font-secundaria);
+  font-size: var(--font-destaque-mobile);
+  font-weight: var(--font-weight-bold);
+}
+
+.paragrafo_mobile {
+  font-family: var(--font-secundaria);
+  font-size: var(--font-paragrafo-mobile);
+  font-weight: var(--font-weight-normal);
+
+}
+
+.subtitulo_mobile {
+  font-family: var(--font-secundaria);
+  font-size: var(--font-subtitulo-mobile);
+  font-weight: var(--font-weight-light);
+} */
+
+}
+/* html, body {
   overflow-x: hidden;
   
-}
+} */
