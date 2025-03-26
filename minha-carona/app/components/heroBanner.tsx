@@ -59,7 +59,7 @@ export default function HeroBanner() {
                     alt="Avatar do usuário"
                     width={600}
                     height={600}
-                    className="rounded-3xl"
+                    className="rounded-3xl "
                 />
             </a>
 
