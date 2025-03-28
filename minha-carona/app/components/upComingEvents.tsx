@@ -22,11 +22,12 @@ const eventos = [
         description: "Chicabana no Trio Elétrico é certeza de muita música boa e aquela energia contagiante que só o CarnaSobral tem! Este ano, a folia vem com tudo, para fazer você pular, cantar e viver momentos que vão ficar na memória! 🔥🎉📍ONDE COMPRAR?ONLINE: brasilticket.com.brSobral: Loja CarnaSobral (Sobral Shopping) ✅ Só na loja você parcela seu boleto do bloco em até 3x sem juros no cartão."
     },
     {
-        title: "Não sei o que é!",
-        local: "Sobral",
-        image: "/assets/seila.jpeg",
+        title: "Sana",
+        local: "Fortaleza",
+        image: "/assets/sana.jpg",
         data: "17/03/2025",
-        description: "Chicabana no Trio Elétrico é certeza de muita música boa e aquela energia contagiante que só o CarnaSobral tem! Este ano, a folia vem com tudo, para fazer você pular, cantar e viver momentos que vão ficar na memória! 🔥🎉📍ONDE COMPRAR?ONLINE: brasilticket.com.brSobral: Loja CarnaSobral (Sobral Shopping) ✅ Só na loja você parcela seu boleto do bloco em até 3x sem juros no cartão."
+        description: "O Sana é o maior evento geek do Norte e Nordeste do Brasil, reunindo fãs de anime, mangá, games, cultura pop e entretenimento em uma experiência única. Realizado duas vezes ao ano, em janeiro e julho, no Centro de Eventos do Ceará, o Sana atrai, em média, 150 mil pessoas anualmente, consolidando-se como um dos maiores festivais do segmento no país. Com uma estrutura completa e atrações para todos os públicos, o evento conta com esculturas geek exclusivas, criadas pelo renomado artista Walterlan Veríssimo, além de diversos palcos e espaços temáticos que recebem convidados nacionais e internacionais."
+       
     }
 ];
 
@@ -49,9 +50,9 @@ export default function UpcomingEvents() {
     });
 
     return (
-        <div className="w-full h-fit my-[4rem] flex flex-col items-center mx-auto bg-white_ice">
+        <div className="w-full h-fit py-[4rem] flex flex-col items-center mx-auto bg-white_ice">
             <div className="w-full max-w-[70rem] flex flex-col f-full my-[3rem]">
-                <h1 className="titulo_sessao text-black mb-[2rem] text-center md:text-left">Viagens Populares</h1>
+                <h1 className="titulo_sessao text-black mb-[2rem] text-center md:text-left">Próximos eventos</h1>
 
                 <div className="flex justify-between items-center my-auto w-full max-w-[70rem]">
                     <button onClick={prevEvent} className="md:flex hidden text-3xl active:text-primary_blue active:scale-100 ease-in-out transition-all duration-100 text-primary_blue hover:scale-125 hover:text-secundary_blue">
